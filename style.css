@@ -21,3 +21,7 @@ body {
 .map__image path:hover {
     fill: #919191;
 }
+
+[id*='NA-']{
+    cursor: pointer;
+}

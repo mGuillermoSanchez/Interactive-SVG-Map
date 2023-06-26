@@ -79,5 +79,41 @@
                 <!-- Data will be send here -->
             </div>
         </div>
+        <script type="text/javascript">
+			$(function(){
+				// When you click, the colours change: 
+				$('[id*=NA-').on('click', function(){
+					let NA = $(this);
+					let AllNa =$('[id*=NA-');
+
+					// Put region news in the console
+					console.log(NA);
+
+					// Put the selected region in grey
+					// and the others in black
+					AllNa.css('fill', '#2e2e2e')
+					NA.css('fill', '#919191');
+				})
+			});
+			
+			function displayData(region) {
+				// Retrieves the 'data-region' data attribute for the selected region
+				var regionID = region.getAttribute('data-region');
+  
+				// Makes a request to the PhpMyAdmin database to retrieve the data corresponding to this region
+				// Use a method such as fetch() to send an AJAX request or use a library such as jQuery
+				fetch('get_data.php?region=' + regionID)
+				.then(function(response) {
+					return response.text();
+				})
+				.then(function(data) {
+					// Display the retrieved data in the #infos <div>
+					document.getElementById('infos').innerHTML = data;
+				})
+				.catch(function(error) {
+					console.log('An error has occurred: ' + error);
+				});
+			}
+		</script>
     </body>
 </html>
