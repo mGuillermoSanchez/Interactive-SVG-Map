@@ -1,3 +1,20 @@
 body {
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.map__image {
+    width: 43%;
+    float: left;
+}
+
+.map__image path {
+    fill: rgb(204, 204, 204);
+    stroke: #f1f1f1;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+.map__image path:hover {
+    fill: #1581ff;
 }
