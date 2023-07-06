@@ -1,27 +1,79 @@
+/* Copyright ©Maxime GUILLERMO SANCHEZ */
+
+
+
 body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
     background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 .map__image {
-    position: relative;
     width: 43%;
     float: left;
-    left: 5%;
+}
+
+.auvergne {
+    fill: #850000;
+}
+
+.provence {
+    fill: #FF7474;
+}
+
+.midiPyrenees {
+    fill: #DD4461;
+}
+
+.nouvelleAquitaine {
+    fill: #FF000A;
+}
+
+.bretagne {
+    fill: #850000;
+}
+
+.paysDeLaLoire {
+    fill: #9A354F;
+}
+
+.normandie {
+    fill: #E3251D;
+}
+
+.centreValDeLoire {
+    fill: #EA4F60;
+}
+
+.ileDeFrance {
+    fill: #FFA6AA;
+}
+
+.nordPasDeCalais {
+    fill: #850000;
+}
+
+.auvergneRhoneAlpes {
+    fill: #9A354F;
+}
+
+.alsaceLoraine {
+    fill: #E3251D;
+}
+
+.corse {
+    fill: #FF000A;
 }
 
 .map__image path {
-    fill: #2e2e2e;
-    stroke: white;
+    stroke: #f1f1f1;
     stroke-width: 1px;
     transition: fill 0.3s;
 }
 
 .map__image path:hover {
-    fill: #919191;
+    fill: #1581ff;
 }
 
-[id*='NA-']{
+[id*='FR-']{
     cursor: pointer;
 }
