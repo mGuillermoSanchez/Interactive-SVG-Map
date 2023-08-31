@@ -1,7 +1,7 @@
 # Interactive-SVG-Map
 Creation of an interactive SVG map to display the contents of a phpMyAdmin database. The example in this publication will help you create your interactive html css javascript and php map.
 
-For anyone with knowledge of web development and languages such as html, css, php and javascript, this code provides a solid foundation for your projects. The example here is a map of Namibia.
+For anyone with knowledge of web development and languages such as html, css, php and javascript, this code provides a solid foundation for your projects. The example here is a map of Namibia. Here you have the link where you can chose the map that you want: https://www.amcharts.com/svg-maps
 
 #Organisation of the database :
 The name of the region assigned in the index.php file (data-region="") must be the same as that assigned in the database.
