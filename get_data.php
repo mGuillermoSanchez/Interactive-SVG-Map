@@ -41,7 +41,6 @@ if($result->num_rows > 0) {
                 border-radius: 5px;
                 float: right;
                 right: 10%;
-                top: 5%;
 
                 font-family: Arial, Helvetica, sans-serif;
                 color: black;
